@@ -2,7 +2,9 @@
 (function ($) {
   
   $('#bottoneprova').click(function () {
-    window.parent.postMessage('message',  '*');
+    window.parent.postMessage({
+      contextActionCode: 'NEW'
+    }, 'http://localhost:3000');
   });
   
   // We use some Javascript and the URL #fragment to hide/show different parts of the page
