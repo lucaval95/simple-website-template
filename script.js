@@ -4,7 +4,7 @@
   $('#bottoneprova').click(function () {
     window.parent.postMessage({
       contextActionCode: 'NEW',
-      contextFilters: {}
+      contextFilters: '{}'
     }, 'http://localhost:3000');
   });
   
