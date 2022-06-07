@@ -3,7 +3,8 @@
   
   $('#bottoneprova').click(function () {
     window.parent.postMessage({
-      contextActionCode: 'NEW'
+      contextActionCode: 'NEW',
+      contextFilters: {}
     }, 'http://localhost:3000');
   });
   
