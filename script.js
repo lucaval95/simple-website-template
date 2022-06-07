@@ -2,7 +2,7 @@
 (function ($) {
   
   $('#bottoneprova').click(function () {
-    window.postMessage('message',  '*');
+    window.parent.postMessage('message',  '*');
   });
   
   // We use some Javascript and the URL #fragment to hide/show different parts of the page
